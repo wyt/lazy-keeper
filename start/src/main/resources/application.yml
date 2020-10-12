@@ -2,13 +2,18 @@ spring:
   application:
     name: lazy-keeper
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    name: defaultDataSource
-    url: jdbc:mysql://localhost:3306/blue?serverTimezone=UTC
-    username: root
-    password: 123456
+    driver-class-name: org.h2.Driver
+    name: defaultH2DataSource
+    url: jdbc:h2:file:./lazyk-DB;db_close_delay=-1;mode=mysql
+    username: ywFQlQklvF
+    password: u*U7U!DhQvJa3qT5
+    platform: h2
   resources:
     static-locations: classpath:/static/
+  h2:
+    console:
+      path: /h2-console # http://127.0.0.1:8080/h2-console
+      enabled: true
 
 server:
   port: 8080
