@@ -7,7 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>lazy-keeper</name>
-    <description>æç§æäººå°å©æ</description>
+    <description>文秘懒人助手</description>
 
     <properties>
         <java.version>1.8</java.version>
